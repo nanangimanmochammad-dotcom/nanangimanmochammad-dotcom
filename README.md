@@ -15,7 +15,7 @@
     <td width="50%" align="center">
       <b>1. 🌊 Splash & Boot</b>
       <br>
-      <img src="https://github.com/user-attachments/assets/bd5bb2ef-f71e-44cf-8d1a-d1516cb2ed1b" width="100%" />
+      <img src="https://github.com/user-attachments/assets/2011dcb1-e0f7-4c20-a48d-270dcc063f72" width="100%" />
     </td>
     <td width="50%" align="center">
       <b>2. ℹ️ System Monitor</b>
@@ -33,7 +33,7 @@
     <td align="center">
       <b>4. 🎨 Animation Demo</b>
       <br>
-      <img src="https://github.com/user-attachments/assets/6f4da880-af92-484f-8c0b-36697f98e0e4" width="100%" />
+      <img src="https://github.com/user-attachments/assets/85c48f72-0279-42ab-b4c3-8d0945018c59" />
     </td>
   </tr>
 
@@ -41,7 +41,7 @@
     <td colspan="2" align="center">
       <b>5. 🎮 Feature Spotlight: Super Mario Parkour</b>
       <br>
-      <img src="https://github.com/user-attachments/assets/5fe89c3c-2398-4a13-822f-5b852dd49627" width="100%" />
+      <img src="https://github.com/user-attachments/assets/bc0d003d-a137-4495-92cb-18f5f766787a" />
     </td>
   </tr>
 </table>
