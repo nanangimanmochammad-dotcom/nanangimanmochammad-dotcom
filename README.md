@@ -1,15 +1,46 @@
-# STM32 Integrated UI System & Mini-Game 🍄
+![5925ca61471d8ee2d56a961a721ca5e2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1d5814b4-bfca-4e64-aed3-6b7436a611d8)# STM32 Integrated UI System & Mini-Game 🍄
 
 > A comprehensive embedded User Interface (UI) system developed for the **MES204** course. It features a multi-state menu architecture, real-time system monitoring, and a custom **Super Mario Parkour** mini-game.
 
-![Status](https://img.shields.io/badge/status-active-success.svg)
-![Platform](https://img.shields.io/badge/platform-STM32-blue.svg)
-![Hardware](https://img.shields.io/badge/hardware-Nucleo--F446RE-green.svg)
-![Display](https://img.shields.io/badge/display-LCD1602-orange.svg)
 
 ## 📺 Demo Preview
 
-*(Upload your video here to demonstrate the UI navigation and gameplay)*
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <b>1. 🌊 Splash & Boot</b>
+      <br>
+      <img src="https://github.com/user-attachments/assets/bd5bb2ef-f71e-44cf-8d1a-d1516cb2ed1b" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <b>2. ℹ️ System Monitor</b>
+      <br>
+      <img src="https://github.com/user-attachments/assets/34d2df2b-556f-4518-bed3-c3daa9baf734" width="100%" />
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <b>3. ☮️ Symbol & Text Art</b>
+      <br>
+      <img src="https://github.com/user-attachments/assets/859c5e3d-53dd-4349-946e-e5376598bfdb" width="100%" />
+    </td>
+    <td align="center">
+      <b>4. 🎨 Animation Demo</b>
+      <br>
+      <img src="https://github.com/user-attachments/assets/6f4da880-af92-484f-8c0b-36697f98e0e4" width="100%" />
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center">
+      <b>5. 🎮 Feature Spotlight: Super Mario Parkour</b>
+      <br>
+      <img src="https://github.com/user-attachments/assets/5fe89c3c-2398-4a13-822f-5b852dd49627" width="100%" />
+    </td>
+  </tr>
+</table>
+
 
 ## 📖 Project Overview
 
