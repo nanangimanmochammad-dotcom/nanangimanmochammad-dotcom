@@ -1,6 +1,11 @@
-![5925ca61471d8ee2d56a961a721ca5e2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1d5814b4-bfca-4e64-aed3-6b7436a611d8)# STM32 Integrated UI System & Mini-Game 🍄
+# STM32 Integrated UI System & Mini-Game 🍄
 
 > A comprehensive embedded User Interface (UI) system developed for the **MES204** course. It features a multi-state menu architecture, real-time system monitoring, and a custom **Super Mario Parkour** mini-game.
+
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Platform](https://img.shields.io/badge/platform-STM32-blue.svg)
+![Hardware](https://img.shields.io/badge/hardware-Nucleo--F446RE-green.svg)
+![Display](https://img.shields.io/badge/display-LCD1602-orange.svg)
 
 
 ## 📺 Demo Preview
