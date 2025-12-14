@@ -94,13 +94,13 @@ int main(void)
   MX_USART2_UART_Init();
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
-  __HAL_RCC_GPIOA_CLK_ENABLE();   // 如果已经在 MX_GPIO_Init 里开了，可省
+  __HAL_RCC_GPIOA_CLK_ENABLE();   // If it has already been opened in MX_GPIO_Init, it can be omitted
   __HAL_RCC_GPIOB_CLK_ENABLE();
-  /* 先把 RS / EN / D4~D7 全部拉低，避免浮动 */
+  /* First, lower all RS/EN/D4 to D7 to avoid fluctuations */
   HAL_GPIO_WritePin(GPIOA, LCD_RS_Pin|LCD_EN_Pin|LCD_D7_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(GPIOB, LCD_D4_Pin|LCD_D5_Pin|LCD_D6_Pin, GPIO_PIN_RESET);
-  HAL_Delay(50);                  // 50 ms >> 15 ms，足够 HD44780 冷启动完成
-  /* 现在才做 LCD 初始化 */
+  HAL_Delay(50);                  // 50 ms >> 15 ms，It is sufficient for the HD44780 to complete the cold start
+  /* The LCD initialization is only being done now */
   LCD_Init();
   /* USER CODE END 2 */
 
@@ -111,8 +111,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  UI_Update(&hrtc); // 传入RTC句柄给UI层使用
-	  HAL_Delay(100); // 刷新间隔，防止屏幕闪烁太快
+	  UI_Update(&hrtc); // Pass the RTC handle to the UI layer for use
+	  HAL_Delay(100); // Refresh intervals to prevent the screen from flickering too quickly
   }
   /* USER CODE END 3 */
 }
@@ -354,3 +354,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
