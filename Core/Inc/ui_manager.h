@@ -11,7 +11,7 @@
 #include "main.h"
 #include "lcd1602.h"
 
-// 定义系统状态
+// Define the system state
 typedef enum {
     STATE_SPLASH,    // scrolling display
 
@@ -28,4 +28,5 @@ void UI_Init(void);
 void UI_Update(RTC_HandleTypeDef *hrtc);
 
 #endif /* INC_MANAGER_H_ */
+
 
