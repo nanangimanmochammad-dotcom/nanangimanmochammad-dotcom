@@ -14,8 +14,8 @@
 // Global variables and state management
 // ==========================================
 
-static UI_State_t currentState = STATE_SPLASH; // original state
-static uint8_t cgram_loaded_type = 0; // 0: Dirty/Anim, 1: Art, 2: Game
+static UI_State_t currentState = STATE_SPLASH; 
+static uint8_t cgram_loaded_type = 0; 
 
 // Splash Rolling variable
 static uint8_t splashFrame = 0;
@@ -35,7 +35,7 @@ static int8_t obstacleX = 16;
 static uint32_t frameDelay_ms = 120;
 #define JUMP_DURATION 4
 
-// Animation Variable (Newly added
+// Animation Variable 
 typedef enum {
     ANIM_RUN_RIGHT,
     ANIM_SLIP_RIGHT,
@@ -54,7 +54,7 @@ static int animFrameStep = 0; // Corresponding to the step (0-3 or 0-2) within e
 // UI Resource Definition (Font)
 // ==========================================
 
-// --- Art Mode resources (original) ---
+// --- Art Mode resources  ---
 const uint8_t peace_L[8] = {0x01, 0x07, 0x09, 0x11, 0x15, 0x0B, 0x05, 0x03};
 const uint8_t peace_R[8] = {0x10, 0x1C, 0x12, 0x11, 0x15, 0x1A, 0x14, 0x18};
 const uint8_t love_L[8] = {0x06, 0x0F, 0x1F, 0x1F, 0x0F, 0x07, 0x03, 0x01};
@@ -62,7 +62,7 @@ const uint8_t love_R[8] = {0x0C, 0x1E, 0x1F, 0x1F, 0x1E, 0x1C, 0x18, 0x10};
 const uint8_t code_L[8] = {0x02, 0x06, 0x0C, 0x18, 0x0C, 0x06, 0x02, 0x00};
 const uint8_t code_R[8] = {0x08, 0x0C, 0x06, 0x03, 0x06, 0x0C, 0x08, 0x00};
 
-// --- Game Mode resources (original) ---
+// --- Game Mode resources  ---
 const uint8_t dino_run1[8] = {0x0C, 0x0C, 0x0E, 0x0E, 0x1F, 0x0E, 0x0A, 0x0A};
 const uint8_t dino_run2[8] = {0x0C, 0x0C, 0x0E, 0x0E, 0x1F, 0x0E, 0x12, 0x12};
 const uint8_t dino_jump[8] = {0x0C, 0x0C, 0x0E, 0x0E, 0x1F, 0x1F, 0x08, 0x04};
@@ -70,8 +70,6 @@ const uint8_t obstacle[8] = {0x00, 0x04, 0x05, 0x15, 0x1F, 0x04, 0x04, 0x04};
 const uint8_t ground[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF};
 
 // --- Animation mode resources (ported from Arduino) ---
-// Note: Arduino's Bxxxxxx has been converted to C standard binary 0bxxxxxx
-// The data remains completely consistent and has not been modified.
 
 // standing man (stepA)
 const uint8_t stepA1[8] = {0b00011,0b00111,0b00111,0b00111,0b00111,0b00001,0b00011,0b00111};
@@ -560,7 +558,7 @@ void UI_Update(RTC_HandleTypeDef *hrtc) {
             if (currentState != STATE_ART) artRendered = 0;
             break;
 
-        // ---------------- STATE: ANIMATION (NEW) ----------------
+        // ---------------- STATE: ANIMATION ----------------
         case STATE_ANIMATION:
             // The animation state is not required Load_Asset Preload because each frame is changing
 
@@ -617,4 +615,5 @@ void UI_Update(RTC_HandleTypeDef *hrtc) {
             break;
     }
 }
+
 
