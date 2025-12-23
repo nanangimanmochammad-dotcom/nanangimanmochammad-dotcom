@@ -69,7 +69,7 @@ const uint8_t dino_jump[8] = {0x0C, 0x0C, 0x0E, 0x0E, 0x1F, 0x1F, 0x08, 0x04};
 const uint8_t obstacle[8] = {0x00, 0x04, 0x05, 0x15, 0x1F, 0x04, 0x04, 0x04};
 const uint8_t ground[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF};
 
-// --- Animation mode resources (ported from Arduino) ---
+// --- Animation mode resources  ---
 
 // standing man (stepA)
 const uint8_t stepA1[8] = {0b00011,0b00111,0b00111,0b00111,0b00111,0b00001,0b00011,0b00111};
@@ -206,9 +206,6 @@ static void Load_Game_Assets(void) {
 }
 
 //Animation-specific rendering assistance: Load 6 characters and draw them to the specified column
-// Note: col_start corresponds to the first parameter of setCursor in the Arduino code
-// Arduino: lcd.setCursor(col, row) -> STM32: LCD_SetCursor(row, col)
-// Arduino: lcd.write(1..6) -> STM32: LCD_WriteChar(0..5)
 static void Render_Anim_Frame(uint8_t col1, uint8_t col2, uint8_t col3,
                               const uint8_t* c1, const uint8_t* c2, const uint8_t* c3,
                               const uint8_t* c4, const uint8_t* c5, const uint8_t* c6) {
@@ -220,7 +217,7 @@ static void Render_Anim_Frame(uint8_t col1, uint8_t col2, uint8_t col3,
     LCD_CreateCustomChar(4, (uint8_t*)c5);
     LCD_CreateCustomChar(5, (uint8_t*)c6);
 
-    // 2. Clear the screen (Clear the screen for every frame of Arduino code)
+    // 2. Clear the screen 
     LCD_Clear();
 
     // 3.draw
@@ -325,7 +322,7 @@ void Game_Render(void) {
 }
 
 // ==========================================
-// Animation state machine logic (Core Transplantation part)
+// Animation state machine logic 
 // ==========================================
 
 void Animation_Reset(void) {
@@ -615,5 +612,6 @@ void UI_Update(RTC_HandleTypeDef *hrtc) {
             break;
     }
 }
+
 
 
